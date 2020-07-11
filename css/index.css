@@ -1,0 +1,978 @@
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+figcaption,
+figure {
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp, pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known issues:
+ * - `select`:
+ *   By default, Chrome on OS X and Safari on OS X allow very limited styling of
+ *   select, unless a border property is set. The default font weight on
+ *   optgroup elements cannot safely be changed in Chrome on OSX and Safari on
+ *   OS X.
+ * - `[type="checkbox"]`:
+ *   It is recommended that you do not style checkbox and radio inputs as
+ *   Firefox's implementation does not respect box-sizing, padding, or width.
+ * - `[type="number"]`:
+ *   Certain font size values applied to number inputs cause the cursor style of
+ *   the decrement button to change from `default` to `text`.
+ * - `[type="search"]`:
+ *   The search input is not fully stylable by default. In Chrome and Safari on
+ *   OSX/iOS you can't control `font`, `padding`, `border`, or `background`. In
+ *   Chrome and Safari on Windows you can't control `border` properly. It will
+ *   apply `border-width` but will only show a border color (which cannot be
+ *   controlled) for the outer 1px of that border. Applying
+ *   `-webkit-appearance: textfield` addresses these issues without removing the
+ *   benefits of search inputs (e.g. showing past searches). Safari (but not
+ *   Chrome) will clip the cancel button on when it has padding (and `textfield`
+ *   appearance).
+ * - `::placeholder`:
+ *   In Edge, placeholders will disappear on `relative` or `absolute` positioned
+ *   `<input>` elements if you use `opacity` less than `1` due to a
+ *   [bug](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3901363/).
+ */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  line-height: 1.15;
+  /* 1 */
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Show the overflow in Edge.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+}
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  color: inherit;
+  /* 2 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Add the correct display in IE 9-.
+ */
+menu {
+  display: block;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: Eurostile-Bold;
+  src: url(../fonts/EurostileBold.ttf);
+}
+@font-face {
+  font-family: Eurostile-Normal;
+  src: url(../fonts/EuroStyleNormal.ttf);
+}
+@font-face {
+  font-family: Europa;
+  src: url(../fonts/Europa-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+body,
+html {
+  height: calc(100vh - calc(100vh - 100%));
+}
+
+p {
+  color: #0e0e0e9f;
+}
+
+h1 {
+  font-family: Eurostile-Bold;
+  text-align: center;
+}
+
+h2,
+h3,
+p {
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  max-height: 350px;
+  height: 18%;
+  position: relative;
+  align-items: center;
+  border-bottom: 1px solid #3eccb4;
+  min-height: 100px;
+}
+.navbar span {
+  font-size: 3rem;
+  margin-right: auto;
+  margin-left: 10%;
+  color: #3eccb4;
+}
+.navbar .button-contact-me {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 10px;
+  right: 50px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #3eccb4;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  font-family: Roboto-Regular;
+}
+.navbar .button-contact-me:hover {
+  background-color: #3eccb4;
+  color: white;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 82%;
+}
+.presentation h1 {
+  margin: 70px 20px 0 20px;
+  font-family: Eurostile-Bold;
+  font-size: 3rem;
+}
+.presentation h3 {
+  font-family: Europa;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(10, 10, 10, 0.5);
+  margin: 40px 20px 30px 20px;
+}
+.presentation .images-container {
+  display: flex;
+  width: 100%;
+  margin-top: auto;
+  justify-content: space-between;
+}
+.presentation .images-container .image-container {
+  position: relative;
+  width: 650px;
+  height: 250px;
+  display: flex;
+  align-self: baseline;
+  margin-top: auto;
+}
+.presentation .images-container .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.presentation .images-container img.my-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 1px solid #3eccb4;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.section2 {
+  min-height: 580px;
+  height: calc(100vh - calc(100vh - 100%));
+  background: #3eccb4;
+  background: radial-gradient(circle, #3eccb4 0%, #c5f9ef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  box-sizing: border-box;
+}
+.section2 h1 {
+  width: 50%;
+  font-family: Eurostile-Bold;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.section2 h3 {
+  width: 50%;
+  font-family: Europa;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  height: fit-content;
+}
+.section3 .skill-card1,
+.section3 .skill-card2 {
+  width: 25%;
+  height: 980px;
+  min-height: 580px;
+  border: 1px solid #3eccb4;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.section3 .skill-card1 .header,
+.section3 .skill-card2 .header {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  flex-direction: column;
+}
+.section3 .skill-card1 .header span,
+.section3 .skill-card2 .header span {
+  font-size: 3.5rem;
+  color: #3eccb4;
+}
+.section3 .skill-card1 .header h1,
+.section3 .skill-card2 .header h1 {
+  font-family: Eurostile-Bold;
+  font-weight: 800;
+  font-size: 2.3rem;
+}
+.section3 .skill-card1 .body,
+.section3 .skill-card2 .body {
+  box-sizing: border-box;
+  padding: 25px 25px;
+}
+.section3 .skill-card1 .body p,
+.section3 .skill-card2 .body p {
+  text-align: center;
+  font-family: Europa;
+  font-size: 18px;
+  line-height: 30px;
+}
+.section3 .skill-card1 .body h2,
+.section3 .skill-card2 .body h2 {
+  text-align: center;
+  font-family: Eurostile-Bold;
+  margin-top: 35px;
+  font-size: 1.6rem;
+  color: #3eccb4;
+}
+.section3 .skill-card1 .body .row,
+.section3 .skill-card2 .body .row {
+  text-align: center;
+  position: relative;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: Europa;
+  font-size: 18px;
+}
+.section3 .skill-card1 .body .row span,
+.section3 .skill-card2 .body .row span {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  color: rgba(10, 10, 10, 0.5);
+}
+.section3 .skill-card1 .body .row img,
+.section3 .skill-card2 .body .row img {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  right: 25px;
+}
+.section3 .skill-card1 {
+  margin-right: 20px;
+}
+.section3 .skill-card2 {
+  margin-left: 20px;
+}
+
+.section4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5% 0;
+  height: fit-content;
+}
+.section4 h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.section4 h3 {
+  margin: 0 40px;
+  font-family: Europa;
+  font-weight: 300;
+  color: rgba(10, 10, 10, 0.5);
+  font-size: 1.5rem;
+}
+.section4 .projects-container {
+  display: flex;
+  margin-top: 40px;
+}
+.section4 .projects-container .container {
+  position: relative;
+  width: 50%;
+}
+.section4 .projects-container .container .image {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.section4 .projects-container .container .middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.section4 .projects-container .container .text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.section4 .projects-container .container:hover .image {
+  opacity: 0.3;
+}
+.section4 .projects-container .container:hover .middle {
+  opacity: 1;
+}
+.section4 .gitlab-section {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.section4 .gitlab-section a {
+  color: #3eccb4;
+  font-size: 1.25rem;
+}
+.section4 .gitlab-section span {
+  color: rgba(10, 10, 10, 0.5);
+  font-size: 3rem;
+}
+
+.footer {
+  display: flex;
+  min-height: 280px;
+  height: fit-content;
+  background-color: #3eccb4;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.footer h1 {
+  color: white;
+}
+.footer h3 {
+  font-family: Europa;
+  font-weight: 300;
+  color: rgba(10, 10, 10, 0.5);
+  font-size: 1.5rem;
+  margin: auto 0 0 0;
+}
+.footer h3 span {
+  font-size: 1.25rem;
+  margin-left: 2px;
+  color: rgba(10, 10, 10, 0.5);
+}
+.footer .contact-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 280px;
+  width: 20%;
+}
+.footer .contact-options span {
+  font-size: 2rem;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+.footer .contact-options span:hover {
+  transform: scale(1.5);
+}
+.footer span {
+  font-size: 4rem;
+  color: white;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .presentation .images-container .image-container {
+    width: 550px;
+    height: 230px;
+  }
+  .presentation .images-container img.my-photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .section3 .skill-card1,
+.section3 .skill-card2 {
+    width: 40%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+  .presentation h3 {
+    font-size: 1.25rem;
+  }
+  .presentation .images-container .image-container {
+    width: 450px;
+    height: 200px;
+  }
+  .presentation .images-container img.my-photo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .section3 .skill-card1,
+.section3 .skill-card2 {
+    width: 40%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+  .presentation h3 {
+    font-size: 1.25rem;
+  }
+  .presentation .images-container .image-container {
+    width: 345px;
+    height: 160px;
+  }
+  .presentation .images-container img.my-photo {
+    width: 145px;
+    height: 145px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .section2 h1 {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .section2 h3 {
+    width: 80%;
+  }
+
+  .section3 .skill-card1,
+.section3 .skill-card2 {
+    width: 47%;
+  }
+  .section3 .skill-card1 .body .row span,
+.section3 .skill-card1 .body .row img,
+.section3 .skill-card2 .body .row span,
+.section3 .skill-card2 .body .row img {
+    right: 0;
+  }
+  .section3 .skill-card1 {
+    margin-right: 5px;
+  }
+  .section3 .skill-card2 {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 575.98px) {
+  .presentation h1 {
+    font-size: 2.5rem;
+  }
+  .presentation h3 {
+    font-size: 1.25rem;
+  }
+  .presentation .images-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .presentation .images-container .image-container {
+    width: 345px;
+    height: 160px;
+    align-self: center;
+  }
+  .presentation .images-container img.my-photo {
+    width: 145px;
+    height: 145px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+
+  .section2 {
+    height: fit-content;
+  }
+  .section2 h1 {
+    margin: 75px 0 0 0;
+    width: 85%;
+    font-size: 1.9rem;
+  }
+  .section2 h3 {
+    width: 85%;
+    font-size: 1.25rem;
+    margin: 50px 0 75px 0;
+  }
+
+  .section3 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .section3 .skill-card1,
+.section3 .skill-card2 {
+    width: 90%;
+  }
+  .section3 .skill-card1 {
+    margin-right: 0;
+  }
+  .section3 .skill-card2 {
+    margin-left: 0;
+  }
+
+  .section4 .projects-container {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
