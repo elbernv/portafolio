@@ -827,7 +827,6 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-width: 280px;
   width: 20%;
 }
 .footer .contact-options span {
@@ -883,6 +882,10 @@ p {
 .section3 .skill-card2 {
     width: 40%;
   }
+
+  .footer .contact-options {
+    width: 60%;
+  }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .presentation h1 {
@@ -926,6 +929,10 @@ p {
   }
   .section3 .skill-card2 {
     margin-left: 5px;
+  }
+
+  .footer .contact-options {
+    width: 60%;
   }
 }
 @media (max-width: 575.98px) {
@@ -989,6 +996,10 @@ p {
   }
   .section4 .projects-container .container {
     width: 80%;
+  }
+
+  .footer .contact-options {
+    width: 60%;
   }
 }
 
