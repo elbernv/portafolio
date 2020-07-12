@@ -68,37 +68,12 @@ p {
 	}
 }
 
-.navbar.navbar-on-scroll {
-	background-color: $base-color;
-	color: white;
-	z-index: 1000;
-
-	span {
-		color: white;
-	}
-
-	.button-contact-me {
-		border: 1px solid white;
-	}
-	.button-contact-me:hover {
-		background-color: white;
-		color: $base-color;
-	}
-}
-
-.navbar.height0 {
-	height: 0;
-	min-height: 0;
-	border: none;
-	overflow: hidden;
-}
-
 .presentation {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	min-height: 82%;
-	height: calc(100vh - calc(100vh - 100%));
+	height: fit-content;
 
 	h1 {
 		margin: auto 20px 0 20px;

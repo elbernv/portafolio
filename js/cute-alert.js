@@ -8,6 +8,7 @@ function cuteAlert({
   confirmText = "OK",
   cancelText = "Cancel",
   closeStyle,
+  icon
 }) {
   return new Promise((resolve) => {
     setInterval(() => {}, 5000);
@@ -48,7 +49,7 @@ function cuteAlert({
       <div class="alert-frame">
         <div class="alert-header ${type}-bg">
           <span class="${closeStyleTemplate}">X</span>
-          <img class="alert-img" src="./img/${type}.svg" />
+          <span class="mdi mdi-${icon}"></span>
         </div>
         <div class="alert-body">
           <span class="alert-title">${title}</span>

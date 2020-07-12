@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@mdi/font": "^5.3.45",
+    "aos": "^2.3.4",
     "normalize-scss": "^7.0.1"
   }
 }
