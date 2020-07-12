@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/index.css" />
 		<link rel="stylesheet" href="./css/materialdesignicons.min.css" />
+		<link rel="stylesheet" href="./css/cute-alert.css" />
 		<title>Elber Nava</title>
 	</head>
 	<body>
@@ -193,15 +194,59 @@
 			</h3>
 			<div class="projects-container">
 				<div class="container">
-					<img src="./img/myphoto.jpeg" alt="Avatar" class="image" />
+					<img
+						src="./img/password-manager.png"
+						alt="Avatar"
+						class="image"
+					/>
 					<div class="middle">
-						<div class="text">John Doe</div>
+						<div
+							class="text"
+							onclick="window.open('https://password-manager1-0-0.herokuapp.com/','_blank')"
+						>
+							Ver Demo
+						</div>
 					</div>
 				</div>
 				<div class="container">
-					<img src="./img/myphoto.jpeg" alt="Avatar" class="image" />
+					<img src="./img/mr-porter.png" alt="Avatar" class="image" />
 					<div class="middle">
-						<div class="text">John Doe</div>
+						<div
+							class="text"
+							onclick="window.open('https://www.mrporter.com/','_blank')"
+						>
+							Ir a la página
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="projects-container">
+				<div class="container">
+					<img
+						src="./img/fisheranddonaldson.png"
+						alt="Avatar"
+						class="image"
+					/>
+					<div class="middle">
+						<div
+							class="text"
+							onclick="window.open('https://www.fisheranddonaldson.com/','_blank')"
+						>
+							Ir a la página
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<img
+						src="./img/shopgumption.png"
+						alt="Avatar"
+						class="image"
+					/>
+					<div
+						class="middle"
+						onclick="window.open('https://shopgumption.com/','_blank')"
+					>
+						<div class="text">Ir a la página</div>
 					</div>
 				</div>
 			</div>
@@ -225,12 +270,15 @@
 				Vivir, aprender y subir de nivel un día a la vez.
 			</h1>
 			<div class="contact-options">
-				<span class="mdi mdi-whatsapp"></span>
-				<span class="mdi mdi-gmail"></span>
-				<span class="mdi mdi-gitlab"></span>
-				<span class="mdi mdi-linkedin"></span>
+				<span onclick="showWhatsapp()" class="mdi mdi-whatsapp"></span>
+				<span onclick="showEmail()" class="mdi mdi-gmail"></span>
+				<span onclick="goToGitlab()" class="mdi mdi-gitlab"></span>
+				<span onclick="goToLinkedIn()" class="mdi mdi-linkedin"></span>
 			</div>
 			<h3>Elber Nava© 2020</h3>
 		</div>
+
+		<script src="./js/cute-alert.js"></script>
+		<script src="./js/index.js"></script>
 	</body>
 </html>

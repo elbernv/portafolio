@@ -489,6 +489,7 @@ template {
 body,
 html {
   height: calc(100vh - calc(100vh - 100%));
+  position: relative;
 }
 
 p {
@@ -511,10 +512,13 @@ p {
   width: 100%;
   max-height: 350px;
   height: 18%;
-  position: relative;
+  position: realtive;
   align-items: center;
   border-bottom: 1px solid #3eccb4;
   min-height: 100px;
+  transition: 0.4s ease all;
+  background-color: white;
+  z-index: 1000;
 }
 .navbar span {
   font-size: 3rem;
@@ -540,7 +544,7 @@ p {
   border: 1px solid #3eccb4;
   border-radius: 25px;
   cursor: pointer;
-  transition: all ease-in-out 0.4s;
+  transition: background-color ease-in-out 0.4s;
   font-family: Roboto-Regular;
 }
 .navbar .button-contact-me:hover {
@@ -548,15 +552,38 @@ p {
   color: white;
 }
 
+.navbar.navbar-on-scroll {
+  background-color: #3eccb4;
+  color: white;
+  z-index: 1000;
+}
+.navbar.navbar-on-scroll span {
+  color: white;
+}
+.navbar.navbar-on-scroll .button-contact-me {
+  border: 1px solid white;
+}
+.navbar.navbar-on-scroll .button-contact-me:hover {
+  background-color: white;
+  color: #3eccb4;
+}
+
+.navbar.height0 {
+  height: 0;
+  min-height: 0;
+  border: none;
+  overflow: hidden;
+}
+
 .presentation {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: fit-content;
   min-height: 82%;
+  height: calc(100vh - calc(100vh - 100%));
 }
 .presentation h1 {
-  margin: 70px 20px 0 20px;
+  margin: auto 20px 0 20px;
   font-family: Eurostile-Bold;
   font-size: 3rem;
 }
@@ -570,7 +597,7 @@ p {
 .presentation .images-container {
   display: flex;
   width: 100%;
-  margin-top: auto;
+  margin-top: 50px;
   justify-content: space-between;
 }
 .presentation .images-container .image-container {
@@ -738,16 +765,21 @@ p {
 .section4 .projects-container {
   display: flex;
   margin-top: 40px;
+  align-items: center;
+  justify-content: center;
 }
 .section4 .projects-container .container {
   position: relative;
-  width: 50%;
+  display: flex;
+  width: 30%;
+  height: 10%;
+  margin: 30px;
 }
 .section4 .projects-container .container .image {
   opacity: 1;
   display: block;
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -762,7 +794,8 @@ p {
   -ms-transform: translate(-50%, -50%);
 }
 .section4 .projects-container .container .text {
-  background-color: #4caf50;
+  background-color: #3eccb4;
+  cursor: pointer;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
@@ -972,6 +1005,10 @@ p {
 
   .section4 .projects-container {
     flex-direction: column;
+    width: 80%;
+  }
+  .section4 .projects-container .container {
+    width: 80%;
   }
 }
 
