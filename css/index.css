@@ -510,12 +510,12 @@ p {
 .navbar {
   display: flex;
   width: 100%;
-  max-height: 350px;
+  max-height: 100px;
   height: 18%;
   position: realtive;
   align-items: center;
   border-bottom: 1px solid #3eccb4;
-  min-height: 100px;
+  min-height: 70px;
   transition: 0.4s ease all;
   background-color: white;
   z-index: 1000;
@@ -637,7 +637,7 @@ p {
 }
 .section3 .skill-card1,
 .section3 .skill-card2 {
-  width: 25%;
+  width: 28%;
   height: 980px;
   min-height: 580px;
   border: 1px solid #3eccb4;
@@ -706,6 +706,12 @@ p {
   position: absolute;
   right: 25px;
   color: rgba(10, 10, 10, 0.5);
+}
+.section3 .skill-card1 .body .row .dbeaver-img,
+.section3 .skill-card2 .body .row .dbeaver-img {
+  height: 50px;
+  width: 55px;
+  right: 15px;
 }
 .section3 .skill-card1 .body .row img,
 .section3 .skill-card2 .body .row img {
@@ -797,6 +803,43 @@ p {
 .section4 .gitlab-section span {
   color: rgba(10, 10, 10, 0.5);
   font-size: 3rem;
+}
+.section4 .gitlab-section .gitlab-action-container {
+  margin-top: 45px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.section4 .gitlab-section .gitlab-action-container:hover .gitlab-image {
+  opacity: 0.3;
+}
+.section4 .gitlab-section .gitlab-action-container:hover .gitlab-button {
+  opacity: 1;
+  cursor: pointer;
+}
+.section4 .gitlab-section .gitlab-action-container .gitlab-image {
+  height: 100%;
+  transition: 0.5s ease;
+  width: 100%;
+  position: absolute;
+}
+.section4 .gitlab-section .gitlab-action-container .gitlab-button {
+  height: 50px;
+  width: 140px;
+  max-width: 120px;
+  background-color: #3eccb4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  text-align: center;
 }
 
 .footer {
