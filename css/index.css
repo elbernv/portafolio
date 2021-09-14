@@ -18,33 +18,12 @@
   font-family: Roboto-Bold;
   src: url(../fonts/Roboto-Bold.ttf);
 }
-body,
-html {
-  height: calc(100vh - calc(100vh - 100%));
-  position: relative;
-}
-
-p {
-  color: #0e0e0e9f;
-}
-
-h1 {
-  font-family: Eurostile-Bold;
-  text-align: center;
-}
-
-h2,
-h3,
-p {
-  text-align: center;
-}
-
 .navbar {
   display: flex;
   width: 100%;
   max-height: 100px;
   height: 18%;
-  position: realtive;
+  position: relative;
   align-items: center;
   border-bottom: 1px solid #8971c9;
   min-height: 70px;
@@ -146,7 +125,7 @@ p {
 
 .section2 {
   min-height: 580px;
-  height: calc(100vh - calc(100vh - 100%));
+  height: calc(100vh - 100vh - 100%);
   background: #8971c9;
   background: radial-gradient(circle, #8971c9 0%, #c3b8d1 100%);
   display: flex;
@@ -587,6 +566,26 @@ p {
   .footer .contact-options {
     width: 60%;
   }
+}
+body,
+html {
+  height: calc(100vh - 100vh - 100%);
+  position: relative;
+}
+
+p {
+  color: #0e0e0e9f;
+}
+
+h1 {
+  font-family: Eurostile-Bold;
+  text-align: center;
+}
+
+h2,
+h3,
+p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

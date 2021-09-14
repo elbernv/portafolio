@@ -1,0 +1,24 @@
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .presentation {
+      .images-container {
+        .image-container {
+          width: 550px;
+          height: 230px;
+        }
+  
+        img.my-photo {
+          width: 200px;
+          height: 200px;
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+  
+    .section3 {
+      .skill-card1,
+      .skill-card2 {
+        width: 40%;
+      }
+    }
+  }
