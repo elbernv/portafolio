@@ -2,69 +2,18 @@
 @use '../colors';
 
 .presentation {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    min-height: 82%;
-    height: fit-content;
-  
-    h1 {
-      margin: auto 20px 0 20px;
-      font-family: Eurostile-Bold;
-      font-size: 3rem;
-    }
-  
-    h3 {
-      font-family: Europa;
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: rgba(10, 10, 10, 0.5);
-      margin: 40px 20px 30px 20px;
-    }
-  
-    .images-container {
-      display: flex;
-      width: 100%;
-      margin-top: auto;
-      justify-content: space-between;
-  
-      .image-container {
-        position: relative;
-        width: 650px;
-        height: 265px;
-        display: flex;
-        align-self: baseline;
-        margin-top: auto;
-  
-        #svg-devices {
-          width: 650px;
-          height: 265px;
-          svg path,
-          svg rect,
-          svg ellipse,
-          svg line {
-            stroke: colors.$base-color;
-          }
-  
-          svg rect#backgroundrect--inject-1 {
-            stroke: transparent;
-          }
-  
-          svg path#backgroundrect {
-            stroke: transparent;
-          }
-        }
-      }
-  
-      img.my-photo {
-        width: 250px;
-        height: 250px;
-        object-fit: cover; // magic goes here
-        border: 1px solid colors.$base-color;
-        border-radius: 50%;
-        position: relative;
-        margin-bottom: 20px;
-        margin-right: 20px;
-      }
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .presentation__title {
+    line-height: 1.5;
+    color: white;
+
+    .presentation__my_name {
+      color: colors.$base-color;
     }
   }
+}

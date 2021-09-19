@@ -2,32 +2,45 @@
 @use '../colors';
 
 .section2 {
-    min-height: 580px;
-    height: calc(100vh - calc(100vh - 100%));
-    background: colors.$base-color;
-    background: radial-gradient(circle, colors.$base-color 0%, rgb(195, 184, 209) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
-    box-sizing: border-box;
-  
-    h1 {
-      width: 50%;
-      font-family: Eurostile-Bold;
-      font-weight: 800;
-      font-size: 2.5rem;
-      text-align: center;
-    }
-  
-    h3 {
-      width: 50%;
-      font-family: Europa;
-      font-weight: 300;
-      line-height: 1.5;
-      font-size: 1.25rem;
-      text-align: justify;
-    }
+  min-height: 580px;
+  height: calc(100vh - calc(100vh - 100%));
+  background: colors.$base-color;
+  background: radial-gradient(
+    circle,
+    colors.$base-color 0%,
+    rgb(195, 184, 209) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  box-sizing: border-box;
+  position: relative;
+
+  .shell {
+    width: 30%;
+    height: unset;
+    max-width: 360px;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
   }
-  
+
+  h1 {
+    width: 50%;
+    font-family: Eurostile-Bold;
+    font-weight: 800;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h3 {
+    width: 50%;
+    font-family: Europa;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+}

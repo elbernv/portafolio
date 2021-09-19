@@ -3,6 +3,7 @@
 
 @use './components/navbar';
 @use './components/presentation';
+@use './components/my_description';
 @use './components/section2';
 @use './components/section3';
 @use './components/section4';
@@ -13,27 +14,15 @@
 @use './responsive/md';
 @use './responsive/sm';
 
-
-body,
-html {
-  height: calc(100vh - calc(100vh - 100%));
-  position: relative;
-}
-
-p {
-  color: #0e0e0e9f;
-}
-
 h1 {
   font-family: Eurostile-Bold;
   text-align: center;
 }
 
-h2,
-h3,
-p {
-  text-align: center;
+.canvas {
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 0;
 }
-
-
-
