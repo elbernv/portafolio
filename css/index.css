@@ -78,8 +78,22 @@
   color: #26f1c5;
 }
 
+@media (max-width: 575.98px) {
+  .presentation .presentation__title {
+    margin-top: -3rem;
+    font-size: 1.65rem;
+    padding: 0 1rem;
+  }
+  .presentation .presentation__title br {
+    display: none;
+  }
+  .presentation .presentation__title .presentation__my_name {
+    color: #26f1c5;
+  }
+}
 .my-description {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
   color: white;
   height: 100vh;
   display: flex;
@@ -104,6 +118,90 @@
   font-weight: 300;
   line-height: 1.5;
   font-size: 1.35rem;
+}
+.my-description .my-photo__container .my-photo__img {
+  width: 265px;
+  height: 360px;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .my-description .my-description__content {
+    margin-right: 4rem;
+  }
+  .my-description .my-description__content .my-description__title {
+    font-size: 2rem;
+  }
+  .my-description .my-description__content .my-description__body {
+    font-size: 1.25rem;
+  }
+  .my-description .my-photo__container .my-photo__img {
+    width: 210px;
+    height: 280px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .my-description .my-description__content {
+    margin-right: 4rem;
+  }
+  .my-description .my-description__content .my-description__title {
+    font-size: 1.8rem;
+  }
+  .my-description .my-description__content .my-description__body {
+    font-size: 1.18rem;
+  }
+  .my-description .my-photo__container .my-photo__img {
+    width: 185px;
+    height: 270px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .my-description {
+    height: 120vh;
+    flex-direction: column-reverse;
+  }
+  .my-description .my-description__content {
+    margin-right: 0;
+    width: 70%;
+  }
+  .my-description .my-description__content .my-description__title {
+    font-size: 1.8rem;
+  }
+  .my-description .my-description__content .my-description__body {
+    font-size: 1.18rem;
+  }
+  .my-description .my-photo__container {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .my-description .my-photo__container .my-photo__img {
+    width: 185px;
+    height: 270px;
+  }
+}
+@media (max-width: 575.98px) {
+  .my-description {
+    height: 125vh;
+    flex-direction: column-reverse;
+  }
+  .my-description .my-description__content {
+    margin-right: 0;
+    width: 80%;
+  }
+  .my-description .my-description__content .my-description__title {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .my-description .my-description__content .my-description__body {
+    font-size: 1.18rem;
+  }
+  .my-description .my-photo__container {
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+  .my-description .my-photo__container .my-photo__img {
+    width: 185px;
+    height: 270px;
+  }
 }
 .section2 {
   min-height: 580px;
@@ -398,166 +496,6 @@
   color: white;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .presentation .images-container .image-container {
-    width: 550px;
-    height: 230px;
-  }
-  .presentation .images-container img.my-photo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
-  .section3 .skill-card1,
-.section3 .skill-card2 {
-    width: 40%;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .presentation h1 {
-    margin-top: 55px;
-    font-size: 2.5rem;
-  }
-  .presentation h3 {
-    font-size: 1.25rem;
-  }
-  .presentation .images-container .image-container {
-    width: 450px;
-    height: 200px;
-  }
-  .presentation .images-container img.my-photo {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-  }
-
-  .section3 .skill-card1,
-.section3 .skill-card2 {
-    width: 40%;
-  }
-
-  .footer .contact-options {
-    width: 60%;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .presentation h1 {
-    margin-top: 65px;
-    font-size: 2.5rem;
-  }
-  .presentation h3 {
-    font-size: 1.25rem;
-  }
-  .presentation .images-container .image-container {
-    width: 345px;
-    height: 160px;
-  }
-  .presentation .images-container img.my-photo {
-    width: 145px;
-    height: 145px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-  }
-
-  .section2 h1 {
-    width: 80%;
-    font-size: 2rem;
-  }
-  .section2 h3 {
-    width: 80%;
-  }
-
-  .section3 .skill-card1,
-.section3 .skill-card2 {
-    width: 47%;
-  }
-  .section3 .skill-card1 .body .row span,
-.section3 .skill-card1 .body .row img,
-.section3 .skill-card2 .body .row span,
-.section3 .skill-card2 .body .row img {
-    right: 0;
-  }
-  .section3 .skill-card1 {
-    margin-right: 5px;
-  }
-  .section3 .skill-card2 {
-    margin-left: 5px;
-  }
-
-  .footer .contact-options {
-    width: 60%;
-  }
-}
-@media (max-width: 575.98px) {
-  .presentation h1 {
-    margin-top: 75px;
-    font-size: 2.5rem;
-  }
-  .presentation h3 {
-    font-size: 1.25rem;
-  }
-  .presentation .images-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    margin-top: 25px;
-  }
-  .presentation .images-container .image-container {
-    width: 345px;
-    height: 160px;
-    align-self: center;
-  }
-  .presentation .images-container img.my-photo {
-    width: 145px;
-    height: 145px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-  }
-
-  .section2 {
-    height: fit-content;
-  }
-  .section2 h1 {
-    margin: 75px 0 0 0;
-    width: 85%;
-    font-size: 1.9rem;
-  }
-  .section2 h3 {
-    width: 85%;
-    font-size: 1.25rem;
-    margin: 50px 0 75px 0;
-  }
-
-  .section3 {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .section3 .skill-card1,
-.section3 .skill-card2 {
-    width: 90%;
-  }
-  .section3 .skill-card1 {
-    margin-right: 0;
-  }
-  .section3 .skill-card2 {
-    margin-left: 0;
-  }
-
-  .section4 .projects-container {
-    flex-direction: column;
-    width: 80%;
-  }
-  .section4 .projects-container .container {
-    width: 80%;
-  }
-
-  .footer .contact-options {
-    width: 60%;
-  }
-}
 h1 {
   font-family: Eurostile-Bold;
   text-align: center;

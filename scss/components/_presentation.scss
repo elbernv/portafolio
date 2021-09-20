@@ -1,4 +1,3 @@
-@use '../fonts';
 @use '../colors';
 
 .presentation {
@@ -14,6 +13,33 @@
 
     .presentation__my_name {
       color: colors.$base-color;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .presentation {
+    .presentation__title {
+      margin-top: -3rem;
+      font-size: 1.65rem;
+      padding: 0 1rem;
+
+      br {
+        display: none;
+      }
+
+      .presentation__my_name {
+        color: colors.$base-color;
+      }
     }
   }
 }
