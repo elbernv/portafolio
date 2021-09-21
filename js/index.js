@@ -30,14 +30,33 @@ const setContainersMaxWith = (containers) => {
   return;
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({ duration: 800 });
+const setAnimationForSkillsCard = () => {
+  let screenWidth = window.screen.width;
+  let frontEndSkillCard =
+    document.getElementsByClassName('front-end-skills')[0];
+  let backEndSkillCard = document.getElementsByClassName('back-end-skills')[0];
 
+  if (screenWidth > 1200) {
+    frontEndSkillCard.setAttribute('data-aos', 'fade-right');
+    backEndSkillCard.setAttribute('data-aos', 'fade-left');
+
+    return;
+  }
+
+  frontEndSkillCard.setAttribute('data-aos', 'fade-up');
+  backEndSkillCard.setAttribute('data-aos', 'fade-up');
+};
+
+document.addEventListener('DOMContentLoaded', function () {
   let containersRequireMaximumWidth = Array.from(
     document.getElementsByClassName('max-width')
   );
   let canvasBackground = document.getElementById('pt');
+
   typedTechnologies();
   setContainersMaxWith(containersRequireMaximumWidth);
   setContainersMaxWith(canvasBackground);
+  setAnimationForSkillsCard();
+
+  AOS.init({ duration: 800 });
 });
