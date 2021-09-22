@@ -208,7 +208,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 1366px;
+  height: 1200px;
 }
 .skills-card .front-end-skills,
 .skills-card .back-end-skills {
@@ -282,12 +282,21 @@
 }
 .skills-card .front-end-skills .content .list_content li,
 .skills-card .back-end-skills .content .list_content li {
-  font-size: 24px;
+  font-size: 20px;
   margin: 5px 0;
   font-family: Eurostile-Normal;
   letter-spacing: 1px;
 }
 
+@media (min-width: 0px) and (max-width: 767.98px) {
+  .skills-card {
+    flex-direction: column;
+    height: 2100px;
+  }
+  .skills-card .front-end-skills {
+    margin-bottom: 50px;
+  }
+}
 .footer {
   display: flex;
   min-height: 280px;
