@@ -1,5 +1,5 @@
 const typedTechnologies = () => {
-  new Typed('#technologies', {
+  let typed = new Typed('#technologies', {
     strings: ['Python', 'Node JS', 'Vue JS', 'Angular JS'],
     typeSpeed: 150,
     backSpeed: 130,
