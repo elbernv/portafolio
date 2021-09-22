@@ -9,6 +9,9 @@
 
   .front-end-skills,
   .back-end-skills {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid colors.$base-color;
     border-radius: 24px;
@@ -16,5 +19,38 @@
     height: 940px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    padding: 2.5rem 2rem;
+
+    .front-end-skills__header,
+    .back-end-skills__header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 160px;
+
+      span {
+        font-size: 3.5rem;
+        color: colors.$base-color;
+      }
+
+      h1 {
+        font-size: 2.3rem;
+        color: #ffff;
+      }
+    }
+
+    .front-end-skills__content,
+    .back-end-skills__content {
+      color: #ffff;
+      border: 1px solid red;
+      width: 100%;
+      text-align: center;
+      font-family: Europa;
+      font-size: 18px;
+      line-height: 30px;
+      color: #0e0e0e9f;
+    }
   }
 }
