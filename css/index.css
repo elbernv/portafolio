@@ -253,8 +253,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Eurostile-Bold;
-  font-size: 20px;
+  font-family: Europa;
+  font-size: 18px;
   line-height: 35px;
   text-align: center;
   height: 120px;
@@ -338,6 +338,63 @@
 .footer span {
   font-size: 4rem;
   color: white;
+}
+
+.recent-projects {
+  position: relative;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5rem 0;
+}
+.recent-projects .title {
+  color: #ffff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recent-projects .subtitle {
+  font-family: Europa;
+  font-weight: 300;
+  font-size: 24px;
+  color: rgba(172, 162, 162, 0.74);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -35px;
+}
+.recent-projects .projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 640px;
+  border: 1px solid red;
+  padding: 0 5rem;
+}
+.recent-projects .projects-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid blue;
+  height: 230px;
+  margin: 1rem 0;
+}
+.recent-projects .projects-container .row .tilin-mundo {
+  background-color: white;
+}
+.recent-projects .projects-container .row .project-container {
+  width: 371px;
+  height: 210px;
+  margin: 2rem;
+  position: relative;
+}
+.recent-projects .projects-container .row .project-container .description {
+  position: absolute;
+}
+.recent-projects .projects-container .row .project-container .button {
+  position: absolute;
+  bottom: 0;
 }
 
 h1 {

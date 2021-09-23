@@ -1,0 +1,68 @@
+.recent-projects {
+  position: relative;
+  height: 740px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5rem 0;
+
+  .title {
+    color: #ffff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-family: Europa;
+    font-weight: 300;
+    font-size: 24px;
+    color: rgba(172, 162, 162, 0.74);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 640px;
+    border: 1px solid red;
+    padding: 0 5rem;
+
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid blue;
+      height: 230px;
+      margin: 1rem 0;
+
+      .tilin-mundo {
+        // background-image: url('../../img/tilinmundo.png');
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        background-color: white;
+      }
+
+      .project-container {
+        width: 371px;
+        height: 210px;
+        margin: 2rem;
+        position: relative;
+
+        .description {
+          position: absolute;
+          // display: none;
+        }
+
+        .button {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}
