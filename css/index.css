@@ -292,9 +292,14 @@
   .skills-card {
     flex-direction: column;
     height: 2100px;
+    width: 250px;
   }
   .skills-card .front-end-skills {
     margin-bottom: 50px;
+  }
+  .skills-card .front-end-skills,
+.skills-card .back-end-skills {
+    width: 350px;
   }
 }
 .footer {
@@ -369,32 +374,73 @@
   flex-direction: column;
   justify-content: center;
   height: 640px;
-  border: 1px solid red;
   padding: 0 5rem;
+  margin: 0 5rem;
 }
 .recent-projects .projects-container .row {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 280px;
+  margin: 1rem 0;
+}
+.recent-projects .projects-container .row .project-container [class*=" imghvr-"] figcaption,
+.recent-projects .projects-container .row .project-container [class^=imghvr-] figcaption {
+  background: rgba(30, 33, 42, 0.8);
+}
+.recent-projects .projects-container .row .project-container [class^=imghvr-] figcaption [class*=" imghvr-shutter-out-"]:before,
+.recent-projects .projects-container .row .project-container [class^=imghvr-shutter-out-]:before {
+  background: rgba(30, 33, 42, 0.65);
+}
+.recent-projects .projects-container .row .project-container [class*=" imghvr-"],
+.recent-projects .projects-container .row .project-container [class^=imghvr-] {
+  background: transparent;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert {
+  width: 400px;
+  height: 230px;
+  border: 1px solid transparent;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert figcaption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert figcaption h3 {
+  margin-top: -40px;
+  cursor: default;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert figcaption .project-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid blue;
-  height: 230px;
-  margin: 1rem 0;
-}
-.recent-projects .projects-container .row .tilin-mundo {
-  background-color: white;
-}
-.recent-projects .projects-container .row .project-container {
-  width: 371px;
-  height: 210px;
-  margin: 2rem;
-  position: relative;
-}
-.recent-projects .projects-container .row .project-container .description {
+  width: 120px;
+  height: 40px;
+  border: 1px solid rgba(252, 252, 252, 0.5);
   position: absolute;
+  bottom: 20px;
+  font-family: Eurostile-Bold;
+  font-size: 1.2rem;
+  left: 50%;
+  margin-left: -60px;
+  cursor: pointer;
 }
-.recent-projects .projects-container .row .project-container .button {
-  position: absolute;
-  bottom: 0;
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert figcaption .project-button:hover {
+  background-color: rgba(252, 252, 252, 0.2);
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert a {
+  cursor: default;
+}
+.recent-projects .projects-container .row .project-container .imghvr-shutter-out-vert:hover {
+  border: 1px solid rgba(252, 252, 252, 0.5);
 }
 
 h1 {

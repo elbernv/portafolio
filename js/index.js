@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let canvasBackground = document.getElementById('pt');
 
   typedTechnologies();
+
   setContainersMaxWith(containersRequireMaximumWidth);
   setContainersMaxWith(canvasBackground);
   setAnimationForSkillsCard();
