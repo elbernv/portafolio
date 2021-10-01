@@ -30,21 +30,30 @@ const setContainersMaxWith = (containers) => {
   return;
 };
 
-const setAnimationForSkillsCard = () => {
+const setAnimations = () => {
   let screenWidth = window.screen.width;
-  let frontEndSkillCard =
-    document.getElementsByClassName('front-end-skills')[0];
-  let backEndSkillCard = document.getElementsByClassName('back-end-skills')[0];
+  const fadeLeftElements = Array.from(
+    document.getElementsByClassName('fade-left')
+  );
+  const fadeRightElements = Array.from(
+    document.getElementsByClassName('fade-right')
+  );
 
   if (screenWidth > 1200) {
-    frontEndSkillCard.setAttribute('data-aos', 'fade-right');
-    backEndSkillCard.setAttribute('data-aos', 'fade-left');
-
+    for (element of fadeLeftElements) {
+      element.setAttribute('data-aos', 'fade-left');
+    }
+    for (element of fadeRightElements) {
+      element.setAttribute('data-aos', 'fade-right');
+    }
     return;
   }
 
-  frontEndSkillCard.setAttribute('data-aos', 'fade-up');
-  backEndSkillCard.setAttribute('data-aos', 'fade-up');
+  const allElements = fadeLeftElements.concat(fadeRightElements);
+
+  for (element of allElements) {
+    element.setAttribute('data-aos', 'fade-up');
+  }
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -57,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setContainersMaxWith(containersRequireMaximumWidth);
   setContainersMaxWith(canvasBackground);
-  setAnimationForSkillsCard();
+  setAnimations();
 
   AOS.init({ duration: 800 });
 });

@@ -443,6 +443,12 @@
   border: 1px solid rgba(252, 252, 252, 0.5);
 }
 
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .recent-projects .projects-container {
+    padding: 0;
+    margin: 0;
+  }
+}
 h1 {
   font-family: Eurostile-Bold;
   text-align: center;

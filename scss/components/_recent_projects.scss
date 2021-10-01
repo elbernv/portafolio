@@ -114,3 +114,12 @@
     }
   }
 }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .recent-projects {
+    .projects-container {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
