@@ -8,28 +8,6 @@ const typedTechnologies = () => {
   });
 };
 
-const setContainersMaxWith = (containers) => {
-  let screenWidth = window.screen.width;
-
-  if (Array.isArray(containers)) {
-    for (let container of containers) {
-      container.style.width =
-        screenWidth - Math.ceil((screenWidth * 1.0466) / 100) + 'px';
-    }
-
-    return;
-  }
-
-  containers.style.width =
-    screenWidth - Math.ceil((screenWidth * 1.0466) / 100) + 'px';
-
-  space.removeAll();
-  document.getElementById('canvas').remove();
-  floatySpace();
-
-  return;
-};
-
 const setAnimations = () => {
   let screenWidth = window.screen.width;
   const fadeLeftElements = Array.from(
@@ -56,16 +34,23 @@ const setAnimations = () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-  let containersRequireMaximumWidth = Array.from(
-    document.getElementsByClassName('max-width')
-  );
-  let canvasBackground = document.getElementById('pt');
+const sendWhatsapp = (event) => {
+  window
+    .open('https://api.whatsapp.com/send?phone=+584144964508', '_blank')
+    .focus();
+};
 
+const sendEmail = (event) => {
+  window.open('mailto:elbernava11@gmail.com').focus();
+};
+
+const goTo = (event, url) => {
+  window.open(url).focus();
+};
+
+document.addEventListener('DOMContentLoaded', function () {
   typedTechnologies();
 
-  setContainersMaxWith(containersRequireMaximumWidth);
-  setContainersMaxWith(canvasBackground);
   setAnimations();
 
   AOS.init({ duration: 800 });
