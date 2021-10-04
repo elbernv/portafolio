@@ -237,10 +237,36 @@
 }
 .skills-card .front-end-skills .content .list_content li,
 .skills-card .back-end-skills .content .list_content li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 20px;
   margin: 5px 0;
   font-family: Eurostile-Normal;
   letter-spacing: 1px;
+}
+.skills-card .front-end-skills .content .list_content li svg,
+.skills-card .back-end-skills .content .list_content li svg {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.skills-card .front-end-skills .content .list_content li svg path,
+.skills-card .back-end-skills .content .list_content li svg path {
+  fill: #ffff;
+}
+.skills-card .front-end-skills .content .list_content li .fast-api path,
+.skills-card .back-end-skills .content .list_content li .fast-api path {
+  fill: #000;
+}
+.skills-card .front-end-skills .content .list_content li .fast-api circle,
+.skills-card .back-end-skills .content .list_content li .fast-api circle {
+  fill: #ffff;
+}
+.skills-card .front-end-skills .content .list_content li svg,
+.skills-card .front-end-skills .content .list_content li span,
+.skills-card .back-end-skills .content .list_content li svg,
+.skills-card .back-end-skills .content .list_content li span {
+  margin: 0 10px;
 }
 
 @media (min-width: 0px) and (max-width: 767.98px) {

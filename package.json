@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
     "@mdi/font": "6.1.95",
     "aos": "2.3.4",
     "imagehover.css": "^2.0.0",
