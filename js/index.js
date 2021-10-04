@@ -1,40 +1,57 @@
-function showContactInfo(){
-    cuteAlert({
-        type: 'success',
-        title: 'Contáctame',
-        message: `Este es mi número de teléfono <br/> <strong>+58 414-4964508</strong><br/><br/>
-        Puedes enviarme un correo a esta dirección <br/> <strong>elbernava11@gmail.com</strong>`,
-        buttonText: 'Ok',
-        'icon' : 'email-plus-outline'
-    });
-}
+const typedTechnologies = () => {
+  let typed = new Typed('#technologies', {
+    strings: ['Python', 'Node JS', 'Vue JS', 'Angular JS'],
+    typeSpeed: 150,
+    backSpeed: 130,
+    loop: true,
+    backDelay: 1200,
+  });
+};
 
-function showWhatsapp(){
-    cuteAlert({
-        type: 'success',
-        title: 'Whatsapp',
-        message: `Este es mi número de teléfono <br/> <strong>+58 414-4964508</strong>`,
-        buttonText: 'Ok',
-        'icon' : 'whatsapp'
-    });
-}
+const setAnimations = () => {
+  let screenWidth = window.screen.width;
+  const fadeLeftElements = Array.from(
+    document.getElementsByClassName('fade-left')
+  );
+  const fadeRightElements = Array.from(
+    document.getElementsByClassName('fade-right')
+  );
 
-function showEmail(){
-    cuteAlert({
-        type: 'success',
-        title: 'Corre Eletrónico',
-        message: `Puedes enviarme un correo a esta dirección <br/> <strong>elbernava11@gmail.com</strong>`,
-        buttonText: 'Ok',
-        'icon' : 'gmail'
-    });
-}
+  if (screenWidth > 1200) {
+    for (element of fadeLeftElements) {
+      element.setAttribute('data-aos', 'fade-left');
+    }
+    for (element of fadeRightElements) {
+      element.setAttribute('data-aos', 'fade-right');
+    }
+    return;
+  }
 
-function goToGitlab(){
-    window.open('https://gitlab.com/users/Elber-17/projects', '_blank')
-}
+  const allElements = fadeLeftElements.concat(fadeRightElements);
 
-function goToLinkedIn(){
-    window.open('https://www.linkedin.com/in/elber-nava-9147aa186/', '_blank')
-}
+  for (element of allElements) {
+    element.setAttribute('data-aos', 'fade-up');
+  }
+};
 
-AOS.init({duration: 850});
+const sendWhatsapp = (event) => {
+  window
+    .open('https://api.whatsapp.com/send?phone=+584144964508', '_blank')
+    .focus();
+};
+
+const sendEmail = (event) => {
+  window.open('mailto:elbernava11@gmail.com').focus();
+};
+
+const goTo = (event, url) => {
+  window.open(url).focus();
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  typedTechnologies();
+
+  setAnimations();
+
+  AOS.init({ duration: 800 });
+});

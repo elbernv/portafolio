@@ -1,353 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="./apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="./favicon-16x16.png"
-		/>
-		<link rel="manifest" href="./site.webmanifest" />
-		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="theme-color" content="#ffffff" />
-		<link rel="stylesheet" href="./css/index.css" />
-		<link rel="stylesheet" href="./css/materialdesignicons.min.css" />
-		<link rel="stylesheet" href="./css/cute-alert.css" />
-		<link rel="stylesheet" href="./css/aos.css" />
-		<title>Elber Nava 2021</title>
-	</head>
-	<body>
-		<div class="navbar">
-			<span class="mdi mdi-desktop-tower-monitor"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="favicon.ico"/>
 
-			<div class="button-contact-me" onclick="showContactInfo()">
-				Contáctame
-			</div>
-		</div>
-		<div class="presentation">
-			<h1>Front-end Developer & Back-end Developer</h1>
-			<h3>
-				Codifico cosas maravillosamente simples... y me encanta lo que
-				hago!
-			</h3>
-			<div class="images-container">
-				<div class="image-container">
-					<img src="./img/vectorpaint.svg" alt="" />
-				</div>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="./css/imagehover.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-				<img class="my-photo" src="./img/myphoto.jpeg" alt="" />
-			</div>
-		</div>
-		<div class="section2" data-aos="fade-up">
-			<h1 data-aos="fade-up">Hola soy Elber. Encantado de conocerte!</h1>
-			<h3 data-aos="fade-up">
-				Desde hace ya 2 años que comencé mi aventura como desarrollador
-				he tenido la oportunidad de trabajar en grandes equipos y de
-				especializarme en las dos áreas más importantes de la
-				programación web, he realizado trabajos remotos para agencias y
-				me encanta mi trabajo!. Soy tranquilamente confiado,
-				naturalmente curioso y siempre trabajo constantemente para
-				mejorar mis habilidades, un problema a la vez.
-			</h3>
-		</div>
-		<div class="section3">
-			<div class="skill-card1" data-aos="fade-up">
-				<div class="header" data-aos="fade-up">
-					<span class="mdi mdi-desktop-mac"></span>
-					<h1>Front-End</h1>
-				</div>
-				<div class="body" data-aos="fade-up">
-					<p data-aos="fade-up">
-						Me gusta codificar cosas desde cero, y disfruto dando
-						vida a las ideas en el navegador.
-					</p>
+    <script src="./js/svg-inject.min.js"></script>
+    
+    <title>Elber Nava</title>
+  </head>
+  <body>
+    <section>
+      <div id="pt" class="canvas"></div>
+    </section>
 
-					<h2 data-aos="fade-up">Tecnologías</h2>
+    <div class="presentation">
+      <h1 class="presentation__title">
+        Hola, Mi nombre es
+        <strong class="presentation__my_name">Elber Nava</strong>. <br />
+        Soy Desarrollador Web Full-Stack, <br />
+        Manejo Tecnologías Como
+        <span id="technologies"></span>
+      </h1>
+    </div>
 
-					<div class="row" data-aos="fade-up">
-						HTML 5
-						<span class="mdi mdi-language-html5"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						CSS
-						<span
-							class="mdi mdi-language-css3"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Sass
-						<span class="mdi mdi-sass" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Bootstrap
-						<span
-							class="mdi mdi-bootstrap"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Javascript
-						<span
-							class="mdi mdi-language-javascript"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Vue.js
-						<span class="mdi mdi-vuejs" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Vuetify.js
-						<span class="mdi mdi-vuetify" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Npm
-						<span class="mdi mdi-npm" data-aos="fade-up"></span>
-					</div>
-					<h2 data-aos="fade-up">Herramientas de Desarrollo</h2>
-					<div class="row" data-aos="fade-up">
-						Visual Studio Code
-						<span
-							class="mdi mdi-microsoft-visual-studio-code"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Terminal
-						<span class="mdi mdi-console-line"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Git
-						<span class="mdi mdi-git" data-aos="fade-up"></span>
-					</div>
-				</div>
-			</div>
-			<div class="skill-card2" data-aos="fade-up">
-				<div class="header" data-aos="fade-up">
-					<span class="mdi mdi-console"></span>
-					<h1>Back-End</h1>
-				</div>
-				<div class="body">
-					<p data-aos="fade-up">
-						Me gusta encontrar el mejor camino para implementar las
-						ideas en la parte lógica de las aplicaciones.
-					</p>
+    <div class="my-description">
+      <div class="my-description__content">
+        <h1 class="my-description__title" data-aos="fade-right">
+          Encantado de conocerte!
+        </h1>
+        <h3 class="my-description__body" data-aos="fade-right">
+          Desde hace ya 2 años que comencé mi aventura como desarrollador he
+          tenido la oportunidad de trabajar en grandes equipos y de
+          especializarme en las dos áreas más importantes de la programación
+          web, he realizado trabajos remotos para agencias y me encanta mi
+          trabajo!. Soy tranquilamente confiado, naturalmente curioso y siempre
+          trabajo constantemente para mejorar mis habilidades, un problema a la
+          vez.
+        </h3>
+      </div>
+      <div class="my-photo__container" data-aos="fade-up">
+        <img class="my-photo__img" src="./img/me.jpg" />
+      </div>
+    </div>
 
-					<h2 data-aos="fade-up">Tecnologías</h2>
+    <div class="skills-card">
+      <div class="front-end-skills fade-right">
+        <div class="header">
+          <span class="mdi mdi-desktop-mac"></span>
+          <h1>Front-End</h1>
+        </div>
+        <div class="content">
+          <h3 class="description">
+            Me gusta codificar cosas desde cero, y disfruto dando vida a las
+            ideas en el navegador.
+          </h3>
+          <h2 class="list_title">Tecnologías</h2>
+          <ul class="list_content">
+            <li>
+              <span>HTML 5</span> <span class="mdi mdi-language-html5"></span>
+            </li>
+            <li>
+              <span>Css</span> <span class="mdi mdi-language-css3"></span>
+            </li>
+            <li>Sass <span class="mdi mdi-sass"></span></li>
+            <li>Bootstrap <span class="mdi mdi-bootstrap"></span></li>
+            <li>
+              Javascript <span class="mdi mdi-language-javascript"></span>
+            </li>
+            <li>Vue JS <span class="mdi mdi-vuejs"></span></li>
+            <li>Angular JS <span class="mdi mdi-angular"></span></li>
+            <li>React JS <span class="mdi mdi-react"></span></li>
+            <li>Npm <span class="mdi mdi-npm"></span></li>
+            <li>Git <span class="mdi mdi-git"></span></li>
+          </ul>
+        </div>
+      </div>
 
-					<div class="row" data-aos="fade-up">
-						Python
-						<span
-							class="mdi mdi-language-python"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						PHP
-						<span
-							class="mdi mdi-language-css3"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Node
-						<span class="mdi mdi-nodejs" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Laravel (PHP)
-						<span class="mdi mdi-laravel" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Django (Python)
-						<span
-							class="mdi mdi-language-python"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Flask (Python)
-						<span
-							class="mdi mdi-language-python"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Mysql
-						<span
-							class="mdi mdi-database"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Microsoft Sql Server
-						<span
-							class="mdi mdi-database"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Postgresql<span
-							class="mdi mdi-database"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<h2 data-aos="fade-up">Herramientas de Desarrollo</h2>
-					<div class="row" data-aos="fade-up">
-						Visual Studio Code
-						<span
-							class="mdi mdi-microsoft-visual-studio-code"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Terminal
-						<span
-							class="mdi mdi-console-line"
-							data-aos="fade-up"
-						></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Postman
-						<img
-							src="./img/devices.svg"
-							alt=""
-							data-aos="fade-up"
-						/>
-					</div>
-					<div class="row" data-aos="fade-up">
-						Git
-						<span class="mdi mdi-git" data-aos="fade-up"></span>
-					</div>
-					<div class="row" data-aos="fade-up">
-						DBeaver<img
-							class="dbeaver-img"
-							src="./img/dbeaver.svg"
-							alt=""
-							data-aos="fade-up"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="section4">
-			<h1 data-aos="fade-up">Mi trabajo reciente</h1>
-			<h3 data-aos="fade-up">
-				Aquí hay algunos proyectos en los que he trabajado
-				recientemente.
-			</h3>
-			<div class="projects-container">
-				<div class="container" data-aos="fade-up">
-					<img
-						src="./img/password-manager.png"
-						alt="Avatar"
-						class="image"
-					/>
-					<div class="middle">
-						<div
-							class="text"
-							onclick="window.open('https://password-manager1-0-0.herokuapp.com/','_blank')"
-						>
-							Ver Demo
-						</div>
-					</div>
-				</div>
-				<div class="container" data-aos="fade-up">
-					<img src="./img/mr-porter.png" alt="Avatar" class="image" />
-					<div class="middle">
-						<div
-							class="text"
-							onclick="window.open('https://www.mrporter.com/','_blank')"
-						>
-							Ir a la página
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="projects-container">
-				<div class="container" data-aos="fade-up">
-					<img
-						src="./img/fisheranddonaldson.png"
-						alt="Avatar"
-						class="image"
-					/>
-					<div class="middle">
-						<div
-							class="text"
-							onclick="window.open('https://www.fisheranddonaldson.com/','_blank')"
-						>
-							Ir a la página
-						</div>
-					</div>
-				</div>
-				<div class="container" data-aos="fade-up">
-					<img
-						src="./img/shopgumption.png"
-						alt="Avatar"
-						class="image"
-					/>
-					<div
-						class="middle"
-						onclick="window.open('https://shopgumption.com/','_blank')"
-					>
-						<div class="text">Ir a la página</div>
-					</div>
-				</div>
-			</div>
-			<div class="gitlab-section">
-				<h1 data-aos="fade-up">Repositorio Gitlab</h1>
-				<h3 data-aos="fade-up">
-					Puedes ver mi repositorio de gitlab, encontrarás cosas
-					interesantes!
-				</h3>
-				<div class="gitlab-action-container" data-aos="fade-up">
-					<img
-						src="./img/gitlab.jpeg"
-						class="gitlab-image"
-						alt="Logo Gitlab"
-					/>
-					<div
-						class="gitlab-button"
-						onclick="window.open('https://gitlab.com/users/Elber-17/projects','_blank')"
-					>
-						Ver perfil
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<span
-				class="mdi mdi-desktop-tower-monitor"
-				data-aos="fade-up"
-			></span>
-			<h1 data-aos="fade-up">
-				Vivir, aprender y subir de nivel un día a la vez.
-			</h1>
-			<div class="contact-options">
-				<span onclick="showWhatsapp()" class="mdi mdi-whatsapp"></span>
-				<span onclick="showEmail()" class="mdi mdi-gmail"></span>
-				<span onclick="goToGitlab()" class="mdi mdi-gitlab"></span>
-				<span onclick="goToLinkedIn()" class="mdi mdi-linkedin"></span>
-			</div>
-			<h3>Elber Nava© 2020</h3>
-		</div>
+      <div class="back-end-skills fade-left">
+        <div class="header">
+          <span class="mdi mdi-console"></span>
+          <h1>Back-End</h1>
+        </div>
+        <div class="content">
+          <h3 class="description">
+            Me gusta encontrar el mejor camino para implementar las ideas en la
+            parte lógica de las aplicaciones.
+          </h3>
+          <h2 class="list_title">Tecnologías</h2>
+          <ul class="list_content">
+            <li>
+              Javascript <span class="mdi mdi-language-javascript"></span>
+            </li>
+            <li>
+              Typescript <span class="mdi mdi-language-typescript"></span>
+            </li>
+            <li>
+              Node JS <span class="mdi mdi-nodejs"></span
+              ></span>
+            </li>
+            <li>Nest JS <img src="./img/nestjs.svg" onload="SVGInject(this)"></li>
+            <li>Express JS <span class="mdi mdi-nodejs"></span></li>
+            <li>Python <span class="mdi mdi-language-python"></span></li>
+            <li>
+              Flask (Python) <img src="./img/flask.svg" onload="SVGInject(this)"></span>
+            </li>
+            <li>Fast Api (Python) <img class="fast-api" src="./img/fastapi.svg" onload="SVGInject(this)"></li>
+            <li>Mysql <span class="mdi mdi-database"></span></li>
+            <li>Postgresql <span class="mdi mdi-database"></span></li>
+            <li>Git <span class="mdi mdi-git"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-		<script src="./js/cute-alert.js"></script>
-		<script src="./js/aos.js"></script>
-		<script src="./js/index.js"></script>
-	</body>
+    <div class="recent-projects">
+      <h1 class="title" data-aos="fade-up">Mi trabajo reciente</h1>
+      <h3 class="subtitle" data-aos="fade-up">
+        Aquí hay algunos proyectos en los que he trabajado recientemente.
+      </h3>
+      <div class="projects-container">
+        <div class="row">
+          <div class="project-container fade-right">
+            <figure class="imghvr-shutter-out-vert gradient-border" id="box">
+              <img src="./img/tilinmundo.png" />
+              <figcaption>
+                <h3>React JS / Nest JS / Postgresql</h3>
+                <div
+                  class="project-button"
+                  onclick="goTo(this, 'https://www.dev.tilinmundo.com')"
+                >
+                  ir
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-container fade-left">
+            <figure class="imghvr-shutter-out-vert">
+              <img src="./img/fast-api-jwt.png" />
+              <figcaption>
+                <h3>Python / Fast Api / Postgresql</h3>
+                <div
+                  class="project-button"
+                  onclick="goTo(this, 'https://simple-login-fast-api.herokuapp.com/docs')"
+                >
+                  ir
+                </div>
+              </figcaption>
+              >
+            </figure>
+          </div>
+        </div>
+        <div class="row">
+          <div class="project-container fade-right">
+            <figure class="imghvr-shutter-out-vert">
+              <img src="./img/woolx.png" />
+              <figcaption>
+                <h3>Html / Css / Javascript</h3>
+                <div
+                  class="project-button"
+                  onclick="goTo(this, 'https://www.woolx.com/')"
+                >
+                  ir
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="project-container fade-left">
+            <figure class="imghvr-shutter-out-vert">
+              <img src="./img/mr-porter.png" />
+              <figcaption>
+                <h3>React JS / Express / Mongo DB</h3>
+                <div
+                  class="project-button"
+                  onclick="goTo(this, 'https://www.mrporter.com/')"
+                >
+                  ir
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span
+        class="mdi mdi-desktop-tower-monitor aos-init aos-animate"
+        data-aos="fade-up"
+      ></span>
+      <h1 data-aos="fade-up" class="aos-init aos-animate">
+        Vivir, aprender y subir de nivel un día a la vez.
+      </h1>
+      <div class="contact-options">
+        <span onclick="sendWhatsapp()" class="mdi mdi-whatsapp"></span>
+        <span onclick="sendEmail()" class="mdi mdi-gmail"></span>
+        <span
+          onclick="goTo(this, 'https://www.github.com/elber-17')"
+          class="mdi mdi-github"
+        ></span>
+        <span
+          onclick="goTo(this, 'https://www.linkedin.com/in/elber-nava-9147aa186/')"
+          class="mdi mdi-linkedin"
+        ></span>
+      </div>
+      <h3>Elber Nava 2021</h3>
+    </div>
+
+    <script src="./js/pt.min.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/typed.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

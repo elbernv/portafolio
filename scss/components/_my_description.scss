@@ -1,0 +1,147 @@
+@use '../colors';
+
+.my-description {
+  position: relative;
+  background-color: rgba(black, 0.2);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  .my-description__content {
+    width: 55%;
+    margin-right: 8rem;
+
+    .my-description__title {
+      font-family: Eurostile-Bold;
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .my-description__body {
+      text-align: justify;
+      font-family: Europa;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 1.35rem;
+    }
+  }
+
+  .my-photo__container {
+    .my-photo__img {
+      width: 265px;
+      height: 360px;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .my-description {
+    .my-description__content {
+      margin-right: 4rem;
+
+      .my-description__title {
+        font-size: 2rem;
+      }
+
+      .my-description__body {
+        font-size: 1.25rem;
+      }
+    }
+
+    .my-photo__container {
+      .my-photo__img {
+        width: 210px;
+        height: 280px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .my-description {
+    .my-description__content {
+      margin-right: 4rem;
+
+      .my-description__title {
+        font-size: 1.8rem;
+      }
+
+      .my-description__body {
+        font-size: 1.18rem;
+      }
+    }
+
+    .my-photo__container {
+      .my-photo__img {
+        width: 185px;
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .my-description {
+    height: 150vh;
+    flex-direction: column-reverse;
+
+    .my-description__content {
+      margin-right: 0;
+      width: 70%;
+
+      .my-description__title {
+        font-size: 1.8rem;
+      }
+
+      .my-description__body {
+        font-size: 1.18rem;
+      }
+    }
+
+    .my-photo__container {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+
+      .my-photo__img {
+        width: 185px;
+        height: 240px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .my-description {
+    height: 125vh;
+    flex-direction: column-reverse;
+
+    .my-description__content {
+      margin-right: 0;
+      width: 80%;
+
+      .my-description__title {
+        font-size: 1.8rem;
+        margin-bottom: 3rem;
+      }
+
+      .my-description__body {
+        font-size: 1.18rem;
+      }
+    }
+
+    .my-photo__container {
+      margin-bottom: 3rem;
+      margin-top: 1rem;
+
+      .my-photo__img {
+        width: 185px;
+        height: 270px;
+      }
+    }
+  }
+}

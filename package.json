@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@mdi/font": "^5.8.55",
-    "aos": "^2.3.4",
-    "normalize-scss": "^7.0.1"
+    "@iconfu/svg-inject": "^1.2.3",
+    "@mdi/font": "6.1.95",
+    "aos": "2.3.4",
+    "imagehover.css": "^2.0.0",
+    "normalize.css": "8.0.1",
+    "typed.js": "2.0.12"
   }
 }
