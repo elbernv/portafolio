@@ -30,7 +30,7 @@
   color: white;
 }
 .presentation .presentation__title .presentation__my_name {
-  color: #26f1c5;
+  color: rgb(38, 241, 197);
 }
 
 @media (max-width: 575.98px) {
@@ -43,7 +43,7 @@
     display: none;
   }
   .presentation .presentation__title .presentation__my_name {
-    color: #26f1c5;
+    color: rgb(38, 241, 197);
   }
 }
 .my-description {
@@ -78,6 +78,7 @@
   width: 320px;
   height: 360px;
   border-radius: 16px;
+  object-fit: contain;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -172,7 +173,7 @@
   flex-direction: column;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid #26f1c5;
+  border: 1px solid rgb(38, 241, 197);
   border-radius: 24px;
   width: 410px;
   height: 940px;
@@ -192,16 +193,16 @@
 .skills-card .front-end-skills .header span,
 .skills-card .back-end-skills .header span {
   font-size: 3.5rem;
-  color: #26f1c5;
+  color: rgb(38, 241, 197);
 }
 .skills-card .front-end-skills .header h1,
 .skills-card .back-end-skills .header h1 {
   font-size: 2.3rem;
-  color: #ffff;
+  color: white;
 }
 .skills-card .front-end-skills .content,
 .skills-card .back-end-skills .content {
-  color: #ffff;
+  color: white;
   width: 100%;
 }
 .skills-card .front-end-skills .content .description,
@@ -214,6 +215,7 @@
   line-height: 35px;
   text-align: center;
   height: 120px;
+  font-weight: 100;
 }
 .skills-card .front-end-skills .content .list_title,
 .skills-card .back-end-skills .content .list_title {
@@ -253,7 +255,7 @@
 }
 .skills-card .front-end-skills .content .list_content li svg path,
 .skills-card .back-end-skills .content .list_content li svg path {
-  fill: #ffff;
+  fill: white;
 }
 .skills-card .front-end-skills .content .list_content li .fast-api path,
 .skills-card .back-end-skills .content .list_content li .fast-api path {
@@ -261,7 +263,7 @@
 }
 .skills-card .front-end-skills .content .list_content li .fast-api circle,
 .skills-card .back-end-skills .content .list_content li .fast-api circle {
-  fill: #ffff;
+  fill: white;
 }
 .skills-card .front-end-skills .content .list_content li svg,
 .skills-card .front-end-skills .content .list_content li span,
@@ -279,7 +281,7 @@
     margin-bottom: 50px;
   }
   .skills-card .front-end-skills,
-.skills-card .back-end-skills {
+  .skills-card .back-end-skills {
     width: 350px;
   }
 }
@@ -290,7 +292,7 @@
   padding: 5rem 0;
 }
 .recent-projects .title {
-  color: #ffff;
+  color: white;
   height: 60px;
   display: flex;
   align-items: center;
@@ -443,19 +445,19 @@
   position: relative;
 }
 .footer h1 {
-  color: #ffff;
+  color: white;
 }
 .footer h3 {
   font-family: Europa;
   font-weight: 300;
-  color: #ffff;
+  color: white;
   font-size: 1.5rem;
   margin: auto 0 0 0;
 }
 .footer h3 span {
   font-size: 1.25rem;
   margin-left: 2px;
-  color: #ffff;
+  color: white;
 }
 .footer .contact-options {
   display: flex;
@@ -473,7 +475,7 @@
 }
 .footer span {
   font-size: 4rem;
-  color: #ffff;
+  color: white;
 }
 
 @media (min-width: 300px) and (max-width: 767.98px) {

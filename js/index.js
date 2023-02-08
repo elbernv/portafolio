@@ -1,6 +1,6 @@
 const typedTechnologies = () => {
-  let typed = new Typed('#technologies', {
-    strings: ['Python', 'Node JS', 'Vue JS', 'Angular JS'],
+  let typed = new Typed("#technologies", {
+    strings: ["Nest JS", "Express JS", "FastApi"],
     typeSpeed: 150,
     backSpeed: 130,
     loop: true,
@@ -11,18 +11,18 @@ const typedTechnologies = () => {
 const setAnimations = () => {
   let screenWidth = window.screen.width;
   const fadeLeftElements = Array.from(
-    document.getElementsByClassName('fade-left')
+    document.getElementsByClassName("fade-left")
   );
   const fadeRightElements = Array.from(
-    document.getElementsByClassName('fade-right')
+    document.getElementsByClassName("fade-right")
   );
 
   if (screenWidth > 1200) {
     for (element of fadeLeftElements) {
-      element.setAttribute('data-aos', 'fade-left');
+      element.setAttribute("data-aos", "fade-left");
     }
     for (element of fadeRightElements) {
-      element.setAttribute('data-aos', 'fade-right');
+      element.setAttribute("data-aos", "fade-right");
     }
     return;
   }
@@ -30,25 +30,25 @@ const setAnimations = () => {
   const allElements = fadeLeftElements.concat(fadeRightElements);
 
   for (element of allElements) {
-    element.setAttribute('data-aos', 'fade-up');
+    element.setAttribute("data-aos", "fade-up");
   }
 };
 
 const sendWhatsapp = (event) => {
   window
-    .open('https://api.whatsapp.com/send?phone=+584144964508', '_blank')
+    .open("https://api.whatsapp.com/send?phone=584144964508", "_blank")
     .focus();
 };
 
 const sendEmail = (event) => {
-  window.open('mailto:elbernava11@gmail.com').focus();
+  window.open("mailto:elbernava11@gmail.com").focus();
 };
 
 const goTo = (event, url) => {
   window.open(url).focus();
 };
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
   typedTechnologies();
 
   setAnimations();

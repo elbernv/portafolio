@@ -1,4 +1,4 @@
-@use '../colors';
+@use "../colors";
 
 .skills-card {
   position: relative;
@@ -53,6 +53,7 @@
         line-height: 35px;
         text-align: center;
         height: 120px;
+        font-weight: 100;
       }
 
       .list_title {
